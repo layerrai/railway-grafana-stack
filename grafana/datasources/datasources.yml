@@ -10,9 +10,9 @@ prune: false
 datasources:
   - name: Loki
     type: loki
-    access: direct
+    access: proxy
     orgId: 1
-    uid: grafana_lokiq
+    uid: loki
     url: $LOKI_INTERNAL_URL
     user:
     database:
@@ -24,7 +24,7 @@ datasources:
     type: prometheus
     access: proxy
     orgId: 1
-    uid: grafana_prometheus
+    uid: prometheus
     url: $PROMETHEUS_INTERNAL_URL
     user:
     database:
@@ -36,7 +36,7 @@ datasources:
     type: tempo
     access: proxy
     orgId: 1
-    uid: grafana_tempo
+    uid: tempo
     url: $TEMPO_INTERNAL_URL
     user:
     database:
