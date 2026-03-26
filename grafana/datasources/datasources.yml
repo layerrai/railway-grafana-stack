@@ -12,7 +12,7 @@ datasources:
     type: loki
     access: proxy
     orgId: 1
-    uid: loki
+    uid: grafana_lokiq
     url: $LOKI_INTERNAL_URL
     user:
     database:
@@ -24,7 +24,7 @@ datasources:
     type: prometheus
     access: proxy
     orgId: 1
-    uid: prometheus
+    uid: grafana_prometheus
     url: $PROMETHEUS_INTERNAL_URL
     user:
     database:
@@ -36,7 +36,7 @@ datasources:
     type: tempo
     access: proxy
     orgId: 1
-    uid: tempo
+    uid: grafana_tempo
     url: $TEMPO_INTERNAL_URL
     user:
     database:
